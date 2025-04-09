@@ -1,0 +1,206 @@
+body {
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;     /* centraliza verticalmente */
+    font-family: Arial, sans-serif;
+    background: rgb(249, 221, 2);
+    background: linear-gradient(
+      90deg,
+      rgba(249, 221, 2, 1) 8%,
+      rgba(6, 236, 237, 1) 92%
+    );
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .rodape {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .logo {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    padding:10px;
+    
+  }
+  #pergunta {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .logos1 {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .logos2 {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .option.selected {
+    background-color:rgb(163, 149, 66);
+    border: 2px solid #000;
+    font-weight: bold;
+  }
+  .option.correct {
+    background-color: #4caf50;
+    color: #fff;
+  }
+  .option.wrong {
+    background-color: #f44336;
+    color: #fff;
+  }
+  .botoes {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  color: #4caf50;
+  }
+  
+  .container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centraliza no meio da tela */
+    max-width: 600px; /* tamanho fixo */
+    padding: 20px;
+    background: rgb(218, 217, 231);
+    background: linear-gradient(
+      90deg,
+      rgba(218, 217, 231, 1) 5%,
+      rgba(218, 217, 231, 1) 96%
+    );
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  
+  
+  .opcoes {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .opcoes button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    background: #182cc9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .opcoes button:hover {
+    background: #555;
+  }
+  
+  button.option.correct,
+  button.option.wrong {
+    color: #000; /* deixa o texto preto */
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  
+  .resultado {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .botoes {
+    margin-top: 1rem;
+  }
+  
+  button.hidden {
+    display: none;
+  }
+  
+  .ajudas {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  
+  
+  .ajudas button {
+    padding: 0.5rem 1rem;
+    background: rgb(2, 122, 70);
+    background: radial-gradient(
+      circle,
+      rgb(20, 61, 43) 100%,
+      rgba(218, 217, 231, 1) 100%
+    );
+    border: none;
+    font-size:13px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .ajudas button.used,
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .flash-correct {
+    animation: flash-green 2s;
+  }
+  
+  .flash-wrong {
+    animation: flash-red 2s;
+  }
+  
+  @keyframes flash-green {
+    from {
+      background-color: #111;
+    }
+    to {
+      background-color: #0f0;
+    }
+  }
+  
+  @keyframes flash-red {
+    from {
+      background-color: #111;
+    }
+    to {
+      background-color: #f00;
+    }
+  }
+  .option.correct {
+    animation: blink-green 2s ease-in-out;
+  }
+  
+  .option.wrong {
+    animation: blink-red 2s ease-in-out;
+  }
+  
+  @keyframes blink-green {
+    0%, 100% { background-color:rgb(255, 251, 14); }
+  
+    50% { background-color:rgb(224, 132, 13); }
+  }
+  
+  @keyframes blink-red {
+    0%, 100% { background-color:rgb(255, 251, 14); }
+  
+    50% { background-color:rgb(224, 132, 13); }
+  }
+  
+  
