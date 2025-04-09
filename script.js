@@ -172,10 +172,10 @@ const perguntas = [
   
     // Desativa todos os botões
     botoes.forEach((btn, i) => {
-      // btn.disabled = true;
+      btn.disabled = false;
   
-      if (i === indice && i !== correta) {
-        btn.classList.add("wrong");
+      if (indice !== correta) {
+        botoes[indice].classList.add("wrong"); // 👉 Mostra só a errada primeiro
       }
   
       if (i === correta) {
