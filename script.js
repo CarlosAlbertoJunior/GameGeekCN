@@ -191,10 +191,6 @@ const perguntas = [
         document.body.classList.add("flash-correct");
         resultadoEl.innerHTML = `✅ <b>VOCÊ ACERTOU!✅</b> <br> 💰 Valor Ganho!: <strong>R$ ${perguntaObj.valor},00</strong>`;
   
-        if (perguntaObj.valor === 100) {
-          resultadoEl.innerHTML += `<br><br>📢 "Se <b>PARAR</b> ganha <b>R$ ${perguntaObj.valor},00</b> !<br>Se <b> ERRAR <b/>, perde <b>50%</b> do que já conquistou!"`;
-        }
-  
         valorAnterior = perguntaObj.valor;
         nextButton.classList.remove("hidden");
       } else {
@@ -208,9 +204,6 @@ const perguntas = [
       resultadoEl.classList.remove("hidden");
     }, 2000);
   }
-  
-  
-  
   
   function desabilitarBotoes() {
     document.querySelectorAll(".option").forEach(btn => btn.disabled = true);
@@ -301,6 +294,7 @@ const perguntas = [
     somAjudaDuo.play();
   
   }
+ 
   
   function updateAjudaButtons(valorAtual = perguntas[perguntaAtual].valor) {
     const isUltima = valorAtual === 1000;
