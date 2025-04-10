@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Geek Não Milionário</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
-</head>
-<body>
-  <div class="logos1">
-    <img src="./imagem/3.png" alt="Geek Não Milionário" class="logo" />
-  </div>
-  <div class="logos2">
-    <img src="./imagem/NIVER.png" alt="Geek Não Milionário" class="logo" />
-  </div>
-  <div class="container">
-    <img src="./imagem/logo.png" alt="Geek Não Milionário" class="logo" />
-    <p id="pergunta"></p>
-    <div id="opcoes" class="opcoes"></div>
-    <div id="resultado" class="resultado hidden"></div>
-    <div class="botoes">
-      <button id="next" class="hidden" onclick="proximaPergunta()">Próxima</button>
-      <button id="restart" class="hidden" onclick="reiniciar()">Reiniciar</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geek Não Milionário</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="logos1">
+      <img src="./imagem/3.png" alt="Geek Não Milionário" class="logo" />
     </div>
-    <div class="ajudas">
-      <button id="eliminateBtn" onclick="eliminarDuas()">❌ Eliminar 2</button>
-      <button id="skipBtn" onclick="pularPergunta()">⏭️ Pular pergunta (3)</button>
-      <button id="juriBtn" onclick="ajudaJuri()">👥 Ajuda do Júri</button>
-      <button id="duoBtn" onclick="ajudaDuo()">🧑‍🤝‍🧑 Ajuda do Duo</button>
+    <div class="logos2">
+      <img src="./imagem/NIVER.png" alt="Geek Não Milionário" class="logo" />
     </div>
-   </div>
-   <script type="module" src="/script.js"></script>
-
-</body>
-<hr>
-
+    <div class="container">
+      <img src="./imagem/logo.png" alt="Geek Não Milionário" class="logo" />
+      <p id="pergunta"></p>
+      <div id="opcoes" class="opcoes"></div>
+      <div id="resultado" class="resultado hidden"></div>
+      <div class="botoes">
+        <button id="next" class="hidden">Próxima</button>
+        <button id="restart" class="hidden">Reiniciar</button>
+      </div>
+      <div class="ajudas">
+        <button id="eliminateBtn">❌ Eliminar 2</button>
+        <button id="skipBtn">⏭️ Pular pergunta (3)</button>
+        <button id="juriBtn">👥 Ajuda do Júri</button>
+        <button id="duoBtn">🧑‍🤝‍🧑 Ajuda do Duo</button>
+      </div>
+    </div>
+    <script src="script.js" type="module" defer></script>
+  </body>
+  <hr />
 </html>
