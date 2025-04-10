@@ -6,9 +6,9 @@ const perguntas = [
       valor: 10
     },
     {
-      pergunta: "Qual é o verdadeiro nome do Homem-Aranha original?",
-      opcoes: ["Peter Parker", "Clark Kent", "Tony Stark", "Bruce Wayne"],
-      correta: 0,
+      pergunta: "Qual é o nome do planeta natal do Goku em Dragon Ball?",
+      opcoes: ["Terra", "Namekusei", "Vegeta", "Kaioshin"],
+      correta: 2,
       valor: 20
     },
     {
@@ -18,9 +18,9 @@ const perguntas = [
       valor: 30
     },
     {
-      pergunta: "Qual personagem dos Vingadores usa um martelo como arma principal?",
-      opcoes: ["Hulk", "Capitão América", "Thor", "Homem de Ferro"],
-      correta: 2,
+      pergunta: "Qual personagem de 'Os Cavaleiros do Zodíaco' é o Cavaleiro de Fênix?",
+      opcoes: ["Shiryu", "Ikki", "Hyoga", "Seiya"],
+      correta: 1,
       valor: 50
     },
     {
@@ -30,8 +30,8 @@ const perguntas = [
       valor: 75
     },
     {
-      pergunta: "Qual é o nome do anime em que os personagens usam pokébolas?",
-      opcoes: ["Digimon", "Pokémon", "Yu-Gi-Oh!", "Naruto"],
+      pergunta: "Em 'Stranger Things', qual é o nome do mundo invertido?",
+      opcoes: ["Dark Zone", "Upside Down", "Reverse World", "Backside"],
       correta: 1,
       valor: 100
     },
@@ -48,14 +48,14 @@ const perguntas = [
       valor: 200
     },
     {
-      pergunta: "Qual a mutação especial do Wolverine nos X-Men?",
-      opcoes: ["Voo", "Superforça", "Garras retráteis", "Visão de calor"],
-      correta: 2,
+      pergunta: "Quem é o criador da série 'Naruto'?",
+      opcoes: ["Tite Kubo", "Masashi Kishimoto", "Akira Toriyama", "Eiichiro Oda"],
+      correta: 1,
       valor: 250
     },
     {
-      pergunta: "Qual o nome do vilão principal de 'Vingadores: Guerra Infinita'?",
-      opcoes: ["Ultron", "Loki", "Thanos", "Galactus"],
+      pergunta: "Em 'Fullmetal Alchemist', qual é o maior tabu da alquimia?",
+      opcoes: ["Transformar ouro", "Criar armas", "Transmutar humanos", "Voar"],
       correta: 2,
       valor: 300
     },
@@ -66,9 +66,9 @@ const perguntas = [
       valor: 350
     },
     {
-      pergunta: "No universo Marvel, qual o nome real do Pantera Negra?",
-      opcoes: ["M'Baku", "T'Chaka", "T'Challa", "N'Jadaka"],
-      correta: 2,
+      pergunta: "Em 'Harry Potter', qual é o nome do animal símbolo da casa Grifinória?",
+      opcoes: ["Águia", "Serpente", "Texugo", "Leão"],
+      correta: 3,
       valor: 400
     },
     {
@@ -94,13 +94,17 @@ const perguntas = [
   const perguntasExtras = [
     { pergunta: "Qual é o maior oceano da Terra?", opcoes: ["Atlântico", "Índico", "Ártico", "Pacífico"], correta: 3 },
     { pergunta: "Quantos estados tem o Brasil?", opcoes: ["24", "25", "26", "27"], correta: 2 },
-    { pergunta: "Qual o símbolo químico do ouro?", opcoes: ["Au", "Ag", "O", "Gd"], correta: 0 },
-    { pergunta: "Qual o nome do martelo do Thor?", opcoes: ["Stormbreaker", "Mjolnir", "Excalibur", "Gungnir"], correta: 1 },
-    { pergunta: "Quem é o criador do Facebook?", opcoes: ["Elon Musk", "Steve Jobs", "Mark Zuckerberg", "Bill Gates"], correta: 2 },
+    { pergunta: "Em *God of War*, qual é o nome do filho de Kratos?", opcoes: ["Atreus", "Ares", "Zeus", "Thor"], correta: 0, },
+    { pergunta: "Qual o nome da nave usada pelos Guardiões da Galáxia?", opcoes: ["Milano", "Falcon", "Normandy", "Enterprise"], correta: 0 },
+    { pergunta: "Em Dragon Ball Z, qual é o nome verdadeiro do Majin Boo antes de ser corrompido?", opcoes: ["Kid Boo", "Uub", "Dende", "Bibidi"], correta: 3 },
+    { pergunta: "Qual é o nome do martelo do Thor?", opcoes: ["Stormbreaker", "Mjolnir", "Aegis", "Excalibur"], correta: 1 },
+    { pergunta: "Em qual filme aparece a frase 'Eu sou seu pai'?", opcoes: ["Star Wars: Episódio V", "Matrix", "Senhor dos Anéis", "Harry Potter e a Pedra Filosofal"], correta: 0 },
+    { pergunta: "Qual destes é um jutsu proibido de Naruto?", opcoes: ["Rasengan", "Chidori", "Edo Tensei", "Kage Bunshin"], correta: 2 },
+    { pergunta: "Quem é o criador da série One Piece?", opcoes: ["Masashi Kishimoto", "Akira Toriyama", "Eiichiro Oda", "Tite Kubo"], correta: 2 },
+    { pergunta: "Qual o nome do robô gigante controlado por crianças em 'Neon Genesis Evangelion'?", opcoes: ["Gundam", "Eva", "Zoid", "Jaeger"], correta: 1 },
+    { pergunta: "Em 'O Senhor dos Anéis', quem carrega o anel até Mordor?", opcoes: ["Aragorn", "Frodo", "Gandalf", "Legolas"], correta: 1 },
     { pergunta: "Qual país tem o formato de uma bota?", opcoes: ["Espanha", "México", "Itália", "França"], correta: 2 },
     { pergunta: "Quantos planetas existem no Sistema Solar?", opcoes: ["7", "8", "9", "10"], correta: 1 },
-    { pergunta: "Quem é conhecido como pai da computação?", opcoes: ["Bill Gates", "Alan Turing", "Steve Jobs", "Tim Berners-Lee"], correta: 1 },
-    { pergunta: "O que significa HTML?", opcoes: ["HyperText Markup Language", "HighText Machine Language", "Hyper Tool Multi Language", "None"], correta: 0 },
     { pergunta: "Qual é o resultado de 7 x 8?", opcoes: ["54", "56", "64", "58"], correta: 1 }
   ];
   
@@ -158,6 +162,21 @@ const perguntas = [
       });
     }
   }
+  function sortearPerguntaExtra(valorAtual) {
+    if (perguntasExtras.length === 0) {
+      console.warn("Não há mais perguntas extras disponíveis.");
+      return null;
+    }
+  
+    const indexSorteado = Math.floor(Math.random() * perguntasExtras.length);
+    const perguntaExtra = { ...perguntasExtras[indexSorteado], valor: valorAtual };
+  
+    // Remove a pergunta usada da lista de extras
+    perguntasExtras.splice(indexSorteado, 1);
+  
+    return perguntaExtra;
+  }
+  
   const acertoSound = new Audio('sounds/acerto.mp3');
   const erroSound = new Audio('sounds/erro.mp3');
   const somAjudaJuri = new Audio("sounds/ajuda-juri.mp3");
@@ -171,39 +190,39 @@ const perguntas = [
     const botoes = document.querySelectorAll(".option");
   
     // Desativa todos os botões
-    botoes.forEach((btn, i) => {
-      btn.disabled = false;
+    botoes.forEach((btn) => btn.disabled = false);
   
-      if (indice !== correta) {
-        botoes[indice].classList.add("wrong"); // 👉 Mostra só a errada primeiro
-      }
+    const botaoSelecionado = botoes[indice];
+    const botaoCorreto = botoes[correta];
   
-      if (i === correta) {
-        setTimeout(() => {
-          btn.classList.add("correct");
-        }, 200);
-      }
-    });
-  
-    setTimeout(() => {
-      if (indice === correta) {
+    if (indice === correta) {
+      // Piscar em verde
+      botaoSelecionado.style.animation = "blink-green 1s 2";
+      setTimeout(() => {
+        botaoSelecionado.classList.add("correct");
         acertoSound.play(); // 🔊 SOM DE ACERTO
         document.body.classList.add("flash-correct");
-        resultadoEl.innerHTML = `✅ <b>VOCÊ ACERTOU!✅</b> <br> 💰 Valor Ganho!: <strong>R$ ${perguntaObj.valor},00</strong>`;
-  
+        resultadoEl.innerHTML = `✅ <b>VOCÊ ACERTOU!✅</b> <br> 💰<strong> PARAR: R$ ${perguntaObj.valor},00 </strong>💰<br> ❌<strong> ERRAR: R$ ${(perguntaObj.valor/2)} ❌</strong>`;
         valorAnterior = perguntaObj.valor;
         nextButton.classList.remove("hidden");
-      } else {
+        resultadoEl.classList.remove("hidden");
+      }, 2000);
+    } else {
+      // Piscar em vermelho
+      botaoSelecionado.style.animation = "blink-red 1s 2";
+      setTimeout(() => {
+        botaoSelecionado.classList.add("wrong");
+        botaoCorreto.classList.add("correct");
         erroSound.play(); // 🔊 SOM DE ERRO
         document.body.classList.add("flash-wrong");
         const valorFinal = valorAnterior / 2;
         resultadoEl.innerHTML = `❌ <b>VOCÊ ERROU.</b>❌<br>🪙 Você recebe <strong>R$ ${valorFinal},00</strong>.<br><strong>Fim de jogo!</strong>`;
         restartButton.classList.remove("hidden");
-      }
-  
-      resultadoEl.classList.remove("hidden");
-    }, 2000);
+        resultadoEl.classList.remove("hidden");
+      }, 2000);
+    }
   }
+  
   
   function desabilitarBotoes() {
     document.querySelectorAll(".option").forEach(btn => btn.disabled = true);
